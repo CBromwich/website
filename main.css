@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: #313B72;
+}
+
+p {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+
+  font-size: 2em;
+
+  transform: translate(-50%, -50%); /* Dynamically center if font size changes */
+}
