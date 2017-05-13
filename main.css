@@ -5,10 +5,11 @@
 }
 
 body {
-  background-color: #313B72;
+  background-color: #462255;
 }
 
 p {
+  color: white;
   position: absolute;
   top: 33%;
   left: 50%;
