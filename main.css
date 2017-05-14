@@ -1,3 +1,5 @@
+/* Styles across all pages */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,19 +24,22 @@ body {
 }
 
 
-ul {
+.nav ul {
   list-style: none;
   height: 50px;
   position: relative;
+  font-size: 0;
 }
 
 
-li {
+.nav li {
   display: inline-block;
-  
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 16px;
 }
 
-a {
+.nav a {
   display: block;
   background-color: #565857;
   color: white;
@@ -44,27 +49,28 @@ a {
   height: 25px;
   padding-top: 15px;
   padding-bottom: 10px;
-  
+
+
 }
 
-li a:hover {
+.nav li a:hover, .nav .active {
   background-color: #8A8D91;
 }
 
-.active {
-  background-color: #8A8D91;
-}
 
 #banner {
   width: 100%;
 }
+
+/* Home page styles */
 
 .content {
   position: relative;
   text-align: center;
   margin-top: 5em;
   border: 3px solid black;
-  width: 33%;
+  height: 25%;
+  width: 25%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -75,4 +81,75 @@ li a:hover {
 
 .content p {
   margin: auto 33%;
+}
+
+/* Homelab Styles */
+
+#specs {
+  position: relative;
+  border: 3px solid black;
+  width: 30%;
+  height: 740px;
+  float: left;
+  display: inline;
+  margin-top: 50px;
+  left: 4%;
+}
+
+#specs dl {
+  position: relative;
+  left: 16%;
+  width: 66%;
+}
+
+#specs dt {
+  padding-left: 25px;
+}
+
+#specs dd {
+  padding-left: 50px;
+}
+
+#rack img {
+  position: relative;
+  margin-top: 50px;
+  display: inline;
+  height: 30%;
+  left: 5%;
+}
+
+#specs h1, #esxi h1 {
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+
+#specs p {
+  position: relative;
+  left: 16%;
+  padding-left: 25px;
+}
+
+#esxi {
+  position: relative;
+  display: inline;
+  float: right;
+  text-align: left;
+  width: 30%;
+  margin-top: 50px;
+  border: 3px solid black;
+  height: 740px;
+  right: 4%;
+}
+
+#esxi ul {
+  position: relative;
+  left: 16%;
+}
+
+#esxi li {
+  text-align: left;
+}
+
+#esxi p {
+  padding-left: 50px;
 }
