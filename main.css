@@ -17,7 +17,7 @@ body {
   background-color: #565857;
   width: 100%;
   text-align: center;
-  margin-top: -4px;
+  margin-top: -5px;
   overflow-x: hidden;
 }
 
@@ -57,4 +57,22 @@ li a:hover {
 
 #banner {
   width: 100%;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  margin-top: 5em;
+  border: 3px solid black;
+  width: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content h1 {
+  margin-bottom: .5em;
+}
+
+.content p {
+  margin: auto 33%;
 }
