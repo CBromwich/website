@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+  /*border: 1px solid rgba(255, 255, 255, 0.3); */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -20,7 +20,6 @@ body {
   width: 100%;
   text-align: center;
   margin-top: -5px;
-  overflow-x: hidden;
 }
 
 
@@ -34,9 +33,9 @@ body {
 
 .nav li {
   display: inline-block;
-  margin-left: 0px;
-  margin-right: 0px;
   font-size: 16px;
+  padding-right: -2px;
+  padding-left: -1px;
 }
 
 .nav a {
@@ -69,11 +68,13 @@ body {
   text-align: center;
   margin-top: 5em;
   border: 3px solid black;
-  height: 25%;
+  height: 25;
   width: 25%;
   left: 50%;
   transform: translateX(-50%);
 }
+
+
 
 .content h1 {
   margin-bottom: .5em;
@@ -85,15 +86,25 @@ body {
 
 /* Homelab Styles */
 
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
 #specs {
-  position: relative;
+  box-sizing: border-box;
   border: 3px solid black;
-  width: 30%;
-  height: 740px;
-  float: left;
-  display: inline;
-  margin-top: 50px;
-  left: 4%;
+  order: 1;
+  flex-grow: 1;
+  flex-basis: 25%;
+  
+   height: 73%;
 }
 
 #specs dl {
@@ -110,12 +121,13 @@ body {
   padding-left: 50px;
 }
 
-#rack img {
-  position: relative;
-  margin-top: 50px;
-  display: inline;
-  height: 30%;
-  left: 5%;
+
+#rack {
+  order: 2;
+  flex-grow: 1;
+  flex-basis: 25%;
+  
+  height: 73%;
 }
 
 #specs h1, #esxi h1 {
@@ -127,19 +139,19 @@ body {
   position: relative;
   left: 16%;
   padding-left: 25px;
+  width: 45%;
 }
 
 #esxi {
-  position: relative;
-  display: inline;
-  float: right;
-  text-align: left;
-  width: 30%;
-  margin-top: 50px;
+  box-sizing: border-box;
   border: 3px solid black;
-  height: 740px;
-  right: 4%;
+  order: 3;
+  flex-grow: 1;
+  flex-basis: 25%;
+  height: 73%;
+  padding-right: 5px;
 }
+
 
 #esxi ul {
   position: relative;
