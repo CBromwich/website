@@ -109,6 +109,7 @@ body {
   width: auto;
   max-width: 33%;
   height: auto;
+  min-height: 73%;
   float: left;
   left: 6%;
 }
@@ -169,7 +170,6 @@ dl, dt, dd, #esxi li, h1 {
 
 #esxi ul {
   position: relative;
-  padding: 25px;
   left: 16%;
   width: 66%;
   word-wrap: break-word;
@@ -182,7 +182,6 @@ dl, dt, dd, #esxi li, h1 {
 
 #esxi p {
   padding-left: 50px;
-  word-wrap: break-word;
 }
 
 /* Contact page styles */
@@ -218,4 +217,30 @@ dl, dt, dd, #esxi li, h1 {
 
 .contact:hover {
   background-color: #3f4140;
+}
+
+/* About page styles */
+
+.about {
+  position: relative;
+  box-align: border-box;
+  border: 3px solid black;
+  width: auto;
+  width: 25%;
+  left: 50%;
+  top: 10%;
+  padding: 10px;
+  transform: translateX(-50%);
+}
+
+
+.about p, .about h1{
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+  width: auto;
+}
+
+.about a {
+  color: #D1D1D1;
 }
