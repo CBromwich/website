@@ -71,7 +71,7 @@ body {
   text-align: center;
   margin-top: 5em;
   border: 3px solid black;
-  height: 25%;
+  height: auto;
   width: 25%;
   left: 50%;
   transform: translateX(-50%);
@@ -81,10 +81,12 @@ body {
 
 .content h1 {
   margin-bottom: .5em;
+  word-wrap: break-word;
 }
 
 .content p {
   margin: auto 25%;
+  word-wrap: break-word;
 }
 
 /* Homelab Styles */
@@ -92,22 +94,23 @@ body {
 #container {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  display: inline-block;
+}
+
+#specs, #esxi, #rack {
+  margin-top: 25px;
 }
 
 #specs {
+  position: relative;
+  word-wrap: break-word;
   box-sizing: border-box;
   border: 3px solid black;
-  order: 1;
-  flex-grow: 1;
-  flex-basis: 25%;
-
-   height: 73%;
+  width: auto;
+  max-width: 33%;
+  height: auto;
+  float: left;
+  left: 6%;
 }
 
 dl, dt, dd, #esxi li, h1 {
@@ -118,23 +121,24 @@ dl, dt, dd, #esxi li, h1 {
   position: relative;
   left: 16%;
   width: 66%;
+  word-wrap: break-word;
 }
 
 #specs dt {
   padding-left: 25px;
+  word-wrap: break-word;
 }
 
 #specs dd {
   padding-left: 50px;
+  word-wrap: break-word;
 }
 
 
 #rack {
-  order: 2;
-  flex-grow: 1;
-  flex-basis: 25%;
-
   height: 73%;
+  position: relative;
+  left: 7%;
 }
 
 #specs h1, #esxi h1 {
@@ -150,60 +154,66 @@ dl, dt, dd, #esxi li, h1 {
 }
 
 #esxi {
+  position: relative;
   box-sizing: border-box;
   border: 3px solid black;
-  order: 3;
-  flex-grow: 1;
-  flex-basis: 25%;
-  height: 73%;
-  padding-right: 5px;
+  min-height: 73%;
+  height: auto;
+  width: auto;
+  min-width: 33%;
+  float: right;
+  right: 5%;
+  word-wrap: break-word;
 }
 
 
 #esxi ul {
   position: relative;
+  padding: 25px;
   left: 16%;
+  width: 66%;
+  word-wrap: break-word;
 }
 
 #esxi li {
   text-align: left;
+  word-wrap: break-word;
 }
 
 #esxi p {
   padding-left: 50px;
+  word-wrap: break-word;
 }
 
 /* Contact page styles */
 
 .contact {
   position: relative;
-  height: 7%;
-  width: 25%;
+  height: auto;
+  width: auto;
+  max-width: 25%;
   left: 50%;
   top: 10%;
   transform: translate(-50%, -10%);
-
   background-color: #2f3030;
 }
 
 .contact p {
   position: relative;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   height: 100%;
+  width: auto;
   line-height: 2;
-  top: 33%;
-  transform: translateY(-33%);
-  border: 1px solid rgba(63, 65, 64, 0.5);
+  border: 1px solid rgba(63, 65, 64, 0.7);
+  word-wrap: break-word
 }
 
 .contact a {
-  position: relative;
-  display: inline-block;
   text-decoration: none;
   color: white;
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .contact:hover {
